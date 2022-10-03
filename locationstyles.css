@@ -1,0 +1,134 @@
+/* GLOBAL */
+*{
+    font-family:'Big Shoulders Display', cursive; 
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/* LOCAL */
+.location-img{
+    background-image: url('./assets/desktop/image-map@2x.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+}
+.button{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 156px;
+    max-width: 200px;
+}
+button{
+    width: 204px;
+    height: 65px;
+    border: 0px;
+    padding: 0px;
+    background-color: #151515;
+    color: white;
+    font-size: 20px;
+    line-height: 23.94px; 
+    letter-spacing: 3.64px;
+    font-weight: 800;
+    cursor: pointer;
+}
+.arrow{
+    width: 54px;
+    height: 65px;
+    border: 0px;
+    background-color: #D5966C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 104px 165px 104px 165px;
+    box-sizing: border-box;
+}
+.text1{
+    font-size: 70px;
+    color: #FFFFFF;
+    font-weight: 900;   
+}
+.text1 p{
+    margin: 40px;
+}
+.text2{
+    color: white;
+    max-width: 540px;
+}
+.text2 h3{
+    font-weight: 900;
+    font-size: 36px;
+    color: #D5966C;
+}
+.text2 p{
+    font-family: 'Outfit', sans-serif;
+    font-size: 22px;
+}
+footer{
+    width: 100%;
+    background-color: #D5966C;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-text_span{
+    color: #151515;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 30px;
+}
+.footer-text_p{
+    color: #151515;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Outfit', sans-serif;
+}
+.icons img{
+    cursor: pointer;
+}
+
+/*  HOVER! */
+.button:hover button{
+    background-color: #D5966C;
+    transition: 0.5s;
+}
+.button:hover .arrow{
+    background-color: #151515;
+    transition: 0.5s;
+}
+.icons img:hover{
+    opacity: 0.5;
+    transition: 0.5s;
+}
+/* RESPONSIVE! */
+@media only screen and (max-width: 1200px) {
+    main{
+        padding: 0px;
+    }
+    .location-img{
+        background-image: url('./assets/tablet/image-map.png');
+    }
+}
+@media only screen and (max-width: 376px){
+    .location-img{
+        background-image: url('./assets/mobile/image-map.png');
+    }
+    .button{
+        left: 0px;
+    }
+    main{
+        flex-wrap: wrap;
+    }
+    footer{
+        flex-wrap: wrap;
+    }
+}
